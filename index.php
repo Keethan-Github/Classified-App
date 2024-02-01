@@ -41,15 +41,28 @@
                 <div class="modal-dialog model modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5 fw-bolder" id="staticBackdropLabel">Login</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <div class="row g-3">
+
+                                <div class="col-12">
+                                    <label class="form-label fw-bold" for="login-email">Email</label>
+                                    <input id="login-email" class="form-control" type=" email">
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label fw-bold" for="login-password">Password</label>
+                                    <input id="login-password" class="form-control" type="password">
+                                </div>
+
+                            </div>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-primary" onclick="login();">Log in</button>
                         </div>
                     </div>
                 </div>
